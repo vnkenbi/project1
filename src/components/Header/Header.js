@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import { Link } from 'react-router-dom'; //them
+import { NavLink } from 'react-router-dom'; //them
 const Header = () => {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
@@ -12,11 +12,11 @@ const Header = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             {/* <Nav.Link href="/">Home</Nav.Link> */}
-            <Link to="/" className='nav-link'>Home</Link>
+            <NavLink to="/" className='nav-link'>Home</NavLink>
             {/* <Nav.Link href="/users">Users</Nav.Link> */}
-            <Link to="/users" className='nav-link' >User</Link>
+            <NavLink to="/users" className='nav-link' >User</NavLink>
             {/* <Nav.Link href="/admins">Admin</Nav.Link> */}
-            <Link to="/admins" className='nav-link'>Admin</Link>
+            <NavLink to="/admins" className='nav-link'>Admin</NavLink>
           </Nav>
 
           <Nav>
