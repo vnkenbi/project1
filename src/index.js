@@ -10,8 +10,10 @@ import {
   Routes,
   Route,
 } from 'react-router-dom'; // thêm cái này 
-import Admin from './components/Admin/Admin';
-import User from './components/User/User';
+import Admin from './components/Admin/Admin'; // thêm cái này
+import User from './components/User/User';// thêm cái này
+import HomePage from './components/Home/Homepage';// thêm cái này
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,6 +22,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<App />} >
+          <Route index element={<HomePage />} />
           <Route path='users' element={<User />} />
           <Route path='admins' element={<Admin />} />
         </Route>

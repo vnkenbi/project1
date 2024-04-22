@@ -12,11 +12,31 @@ body {
   .header-container {
     .navbar-nav {
       .nav-link {
+        // z-index: 10;
+        opacity: 0.6;
+
         &.active {
-          color: red;
+          color: #00bfff;
         }
       }
 
     }
   }
 }
+
+
+
+video {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}
+
+// video {
+//   position: fixed;
+//   text-align: center;
+//   top: 50%;
+//   left: 50%;
+//   -webkit-transform: translate(-50%, -50%);
+//   transform: translate(-50%, -50%);
+// }
