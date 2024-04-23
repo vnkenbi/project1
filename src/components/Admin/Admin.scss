@@ -1,0 +1,10 @@
+.admin-container {
+    display: flex; // chọn này đề các con nằm trên 1 row
+
+    .admin-sidebar {
+        .pro-sidebar {
+            height: 100vh !important;
+        }
+
+    }
+}
