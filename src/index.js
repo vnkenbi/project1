@@ -13,6 +13,8 @@ import {
 import Admin from './components/Admin/Admin'; // thêm cái này
 import User from './components/User/User';// thêm cái này
 import HomePage from './components/Home/Homepage';// thêm cái này
+import ManageUser from './components/Admin/content/ManageUser';
+import Dashboard from './components/Admin/content/DashBoard';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -26,7 +28,12 @@ root.render(
           <Route path='users' element={<User />} />
 
         </Route>
-        <Route path='admins' element={<Admin />} />
+        {/* Tạo các con của route cha admin */}
+        <Route path='/admins' element={<Admin />} >
+          <Route index element={<Dashboard />} />
+          <Route path='manage-users' element={<ManageUser />} />
+
+        </Route>
       </Routes>
 
     </BrowserRouter>

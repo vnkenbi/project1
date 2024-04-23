@@ -75,10 +75,11 @@ body {
         button {
           border-radius: 5px;
           padding: 0 15px;
-          border: 1px solid #504c4c;
+          // border: 1px solid #504c4c;
           background: #403d3d;
           color: white;
           height: 40px;
+          border: none;
 
           &:hover {
             background: black;

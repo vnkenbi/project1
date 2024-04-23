@@ -1,0 +1,42 @@
+.manage-user-container {
+    .tile {}
+
+    .user-content {}
+}
+
+.modal-add-user {
+    .img-preview {
+        border: 1px solid red; // border màu đỏ
+        height: 150px; // chiều cao khung preview là 150 px
+        border: 1px dashed; //kiểu border là dash ....
+        border-radius: 5px; // bo tròn 4 gốc border
+        display: flex; // sắp xếp các phần tử nằm trên 1 hàng
+        justify-content: center; //xắp xếp nội dung vào canh giữa hàng
+        align-items: center; // xắp xếp nội dung canh giữa cột
+        color: #ccc; // chữ mờ
+
+        img {
+            max-width: 100%; // để cho chiêu rông ảnh tối đa bằng div chưa nó
+            max-height: 100%; // để cho chiêu cao ảnh tối đa bằng div chưa nó
+        }
+
+    }
+
+
+    .label-upload {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        width: fit-content;
+        background: #c2c1b1;
+        border-radius: 5px;
+        padding: 3px 17px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: red;
+        }
+    }
+}
